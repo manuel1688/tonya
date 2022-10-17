@@ -15,9 +15,7 @@ df2 = pd.DataFrame([
   [3, 'San Francisco', 90],
   [4, 'Sacramento', 115],
 ],
-  columns=[
-    'Store ID','Location','Number of Employees'
-  ])
+columns=['Store ID','Location','Number of Employees'])
 
 # print(df2)
 
