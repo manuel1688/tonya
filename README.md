@@ -1,2 +1,2 @@
 # tonya
-JavaScript and Python
+Python and JavaScript
