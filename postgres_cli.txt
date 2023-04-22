@@ -2,7 +2,12 @@ Postgres CLI tools
 Keep this as a general reference. You'll be using these commands quite a lot if you are building web apps with Postgres.
 
 $ pg_ctl -D /usr/local/var/postgres start #arrancar el motor de base de datos de postgres
-ß
+
+#Comando para conectarse a base de datos Postgres
+psql postgres
+
+psql -h 127.0.0.1 -p 5433 -U postgres
+
 Log in as a particular user
 Default installed user is called postgres
 

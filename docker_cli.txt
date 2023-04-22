@@ -1,0 +1,8 @@
+#Comando para bajar la ultima imagen de postgres en Docker Registry
+docker pull postgres:latest
+
+#show de running container
+docker ps
+
+#create and run container
+docker run --name psql -e POSTGRES_PASSWORD=123456 -p 5433:5432 -d postgres:latest 

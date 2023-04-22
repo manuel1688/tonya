@@ -56,6 +56,13 @@ print('The encoded version (with backslashreplace) is:', string.encode("ascii", 
 print('The encoded version (with namereplace) is:', string.encode("ascii", "namereplace"))
 
 # my_string.format()
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+
+price = 49
+txt = f"""For only {price:.2f} dollars!"""
+print(txt)
+
 # my_string.isalpha()
 # my_string.islower()
 # my_string.istitle()
