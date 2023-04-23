@@ -6,3 +6,39 @@ docker ps
 
 #create and run container
 docker run --name psql -e POSTGRES_PASSWORD=123456 -p 5433:5432 -d postgres:latest 
+
+The --name flag allows you to specify a name for the container that can be used later to reference the container. 
+If you don’t specify a name, Docker will assign a random string name to the container.
+The -e flag stands for “environment”. This sets the environment variable POSTGRES_PASSWORD to the value password!.
+The -p flag stands for “publish”. This allows you to bind your local machine’s port 5433 to the container port 5432.
+The -d stands for “detach”. This tells Docker run the indicated image in the background and print the container ID. 
+When you use this command, you will still be able to use the terminal to run other commands, otherwise, you would need to open a new terminal.
+
+
+#List all containers
+docker ps --all
+# Stop
+docker stop <container_ID>
+# Remove
+docker container rm <container_ID>
+
+# List all images
+docker image ls
+# Stop
+docker image stop <image_ID>
+# Remove
+docker image rm <image_ID>
+
+#Si yo creo el Dockerfile, debo ir a la ruta donde creee el archivo
+# y ahí ejecutar los comandos
+
+#Build an image
+#Note that the full stop (.) tells the docker build command to use the Dockerfile found in the current directory.
+docker build --tag test . 
+docker build -t test .
+
+#Check the list of images
+docker image ls
+
+#Create and run a container
+docker run --name myContainer  -p 80:8080 test
