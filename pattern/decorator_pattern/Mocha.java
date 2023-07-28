@@ -1,5 +1,7 @@
-package decorator_pattern;
+//__ The Decorator Pattern: attaches additional responsabilities 
+//to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
+package decorator_pattern;
 
 public class Mocha extends CondimentDecorator {
 

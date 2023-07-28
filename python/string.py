@@ -64,8 +64,25 @@ txt = f"""For only {price:.2f} dollars!"""
 print(txt)
 
 # my_string.isalpha()
-# my_string.islower()
-# my_string.istitle()
+string_with_letter = "abcdef"
+string_with_number = "123abcdef"
+
+print(string_with_letter.isalpha())
+print(string_with_number.isalpha())
+
+# my_string.islower() valida si todos los catacteres están en minuscula
+string_a = "ABCD"
+string_b = "aBcd"
+
+print(string_a.islower())
+print(string_b.islower())
+
+# my_string.istitle() valida si cada palabra empieza con mayuscula
+txt = "Hello, And Welcome To my World!"
+
+x = txt.istitle()
+
+print(x)
 # my_string.endswith()
 # my_string.format_map()
 # my_string.isdecimal()

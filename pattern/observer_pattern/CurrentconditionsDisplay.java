@@ -1,6 +1,6 @@
 package observer_pattern;
 
-public class CurrentconditionsDisplay implements Observer,DisplayElement {
+public class CurrentconditionsDisplay implements Observer,DisplayElement { 
 
     private float temperature;
     private float humidity;
